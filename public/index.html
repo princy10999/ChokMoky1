@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#BD3D3D" />
+    <meta
+      name="description"
+      content="An online ecommerce website for silver jewellery."
+      data-react-helmet="true"
+    />
+    <meta property="og:title" content="Chokmoki" data-react-helmet="true" />
+    <meta
+      property="og:description"
+      content="An online ecommerce website for silver jewellery."
+      data-react-helmet="true"
+    />
+    <meta
+      property="og:image"
+      content="https://chokmoki.com/dev/storage/app/public/banner_image/1674655451.png"
+      data-react-helmet="true"
+    />
+    <link
+      rel="canonical"
+      href="https://chokmoki.com/dev/"
+      data-react-helmet="true"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+    <title>Chokmoki</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: "1326765214789398",
+          cookie: true,
+          xfbml: true,
+          version: "v15.0",
+        });
+
+        FB.AppEvents.logPageView();
+      };
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+  </body>
+</html>
